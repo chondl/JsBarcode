@@ -1,4 +1,6 @@
-function EAN(EANnumber){
+;(function(exports){
+
+exports.EAN = function (EANnumber){
 
 	this.EANnumber = EANnumber+"";
 
@@ -151,9 +153,9 @@ function EAN(EANnumber){
 }
 
 
-function UPC(UPCnumber){
+exports.UPC = function(UPCnumber){
 	
-	this.ean = new EAN("0"+UPCnumber);
+	this.ean = new exports.EAN("0"+UPCnumber);
 	
 	this.valid = function(){
 		return this.ean.valid();
@@ -164,3 +166,6 @@ function UPC(UPCnumber){
 	}
 	
 }
+
+})(typeof exports === 'undefined' ? this['JsBarcode']=(this['JsBarcode'] || {}) : exports)
+;

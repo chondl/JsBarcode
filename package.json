@@ -1,0 +1,26 @@
+{
+  "name": "JsBarcode",
+  "version": "0.0.0",
+  "description": "Barcode generation library",
+  "main": "main.js",
+  "files": [
+    "CODE128.js",
+    "EAN_UPC.js",
+    "MIT-LICENSE.txt",
+    "main.js"
+  ],
+  "scripts": {
+    "test": "./node_modules/expresso/bin/expresso"
+  },
+  "devDependencies": {
+    "expresso" : "0.9.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chondl/JsBarcode.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "0714ad1e3c45471f8959163b2b565b9fa4699cc1"
+}

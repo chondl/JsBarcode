@@ -1,4 +1,6 @@
-function CODE128(string){
+;(function(exports){
+
+exports.CODE128 = function(string){
 
 	this.string128 = string;
 
@@ -208,3 +210,6 @@ function CODE128(string){
 		return "";
 	}
 }
+
+})(typeof exports === 'undefined' ? this['JsBarcode']=(this['JsBarcode'] || {}) : exports)
+;
